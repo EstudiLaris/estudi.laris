@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ca-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+        https://estudilaris.github.io/laris01/
+        https://laris01--estudilaris.repl.co
+    -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="whatsBtn.css">
+    <link rel="stylesheet" href="navBar.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="slideshow.css">
+    <link rel="stylesheet" href="fotoPrincipal.css">
+    <link rel="stylesheet" href="colapsable.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="portfolio.css">
+
+    <link rel="icon" href="pictures/200127_Logo.jpg" type="image/gif" sizes="16x16">
+
+    <title>Estudi Laris</title>
+</head>
+
+<body>
+    <div class="cltop" id="clTop">
+        <div class="clnavBar" id="myNavbar">
+
+            <div>
+                <label for="check" onclick="openNav()">
+                    <i class="fas fa-bars" id="btn"></i>
+                </label>
+            </div>
+
+            <div id="titolPrincipal">
+                <img src="pictures/200314_Logo_Sense fons.png" id="Logo">
+                <h1 class="titol" id="titolMenu">ESTUDI LARIS</h1>
+
+            </div>
+            <ol class="idioma">
+                <li>
+                    <a href="es/contacto.html">
+                        <img src="pictures/ES.png" alt="" class="imgIco"></a>
+                </li>
+                <li>
+                    <a href="en/contact.html">
+                        <img src="pictures/UK.png" alt="" class="imgIco"></a>
+                </li>
+            </ol>
+
+        </div>
+    </div>
+    <nav class="menuNav">
+        <ul class="navMenu" id="navMenu">
+            <br>
+            <label for="check">
+                <i class="fas fa-times" id="cancel" onclick="closeNav()"></i>
+              </label>
+            <li>
+                <a href="javascript:canviPagina('index.html');">Inici</a>
+            </li>
+            <li>
+                <a href="javascript:canviPagina('equip.html');">Equip</a>
+            </li>
+            <li>
+                <a href="javascript:obrirSubmenu();">Serveis</a>
+                <ul class="subMenu" id="subMenu">
+                    <li>
+                        <a href="javascript:alert('encara no');">Servei 1</a>
+                    </li>
+                    <li>
+                        <a href="javascript:alert('encara no');">Servei 2</a>
+                    </li>
+                    <li>
+                        <a href="javascript:alert('encara no');">Servei 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:canviPagina('portfolio.html');">Portfolio</a>
+            </li>
+            <li>
+                <a href="javascript:canviPagina('contacte.html');">Contacte</a>
+            </li>
+        </ul>
+    </nav>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section class="grid-container-2">
+        <div class="grid-item">
+            <article>
+                <h2>Arquitectura</h2>
+                <br>
+                <i class="fas fa-at"></i>
+                <a href="mailto:estudi.laris@gmail.com" target="_top"> estudi.laris@gmail.com</a>
+                <br>
+                <i class="fas fa-mobile-alt"></i>
+                <a href="tel:34658699200"> +34 658 69 92 00</a>
+                <br>
+                <i class="fab fa-whatsapp"></i>
+                <a href="https://wa.me/34658699200?text=Desitjo+que+es+posin+en+contacte.+Gr%C3%A0cies."> Envia whatsapp</a>
+                <br>
+            </article>
+            <br>
+            <br>
+            <br>
+            <article>
+                <h2>Optimització del consum energètic</h2>
+                <br>
+                <i class="fas fa-at"></i>
+                <a href="mailto:estudi.laris@gmail.com" target="_top"> estudi.laris@gmail.com</a>
+                <br>
+                <i class="fas fa-mobile-alt"></i>
+                <a href="tel:34608618374"> +34 608 618 374</a>
+                <br>
+                <i class="fab fa-whatsapp"></i>
+                <a href="https://wa.me/34608618374?text=Desitjo+que+es+posin+en+contacte.+Gr%C3%A0cies."> Envia whatsapp</a>
+                <br>
+                <!--
+                <a href="https://www.linkedin.com/in/laia-cunill-aragonès-421b37100/" target="_blank">
+                    <i class="fab fa-linkedin-in"> Linkedin</i>
+                </a>
+                -->
+            </article>
+        </div>
+        <div class="grid-item">
+            <article>
+                <br><br>
+                <h3>Carrer d'En Torras i Bages, 26</h3>
+                <h3>08770 Sant Sadurní d'Anoia</h3>
+                <h3>Barcelona</h3>
+                <br><br>
+            </article>
+            <article>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d361.658458293532!2d1.7915941495785943!3d41.41139056565789!2m3!1f348.53587115666255!2f78.48992874701551!3f0!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x12a47cd5c201bf87%3A0xe78ed1c0e504e700!2sCarrer%20d&#39;En%20Torras%20i%20Bages%2C%2026%2C%2008770%20Sant%20Sadurn%C3%AD%20d&#39;Anoia%2C%20Barcelona!5e1!3m2!1sca!2ses!4v1584777992671!5m2!1sca!2ses"
+                    width="auto" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </article>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+
+
+
+    <footer class="container">
+        <ol>
+            <li><a href="contacte.html" class="titol">ESTUDI LARIS</a></li>
+            <li>
+                <i class="fas fa-at" id="idMail"></i>
+                <a href="mailto:estudi.laris@gmail.com" target="_top"> estudi.laris@gmail.com</a>
+            </li>
+
+            <li>
+                <i class="fas fa-mobile-alt" id="idPhone"></i>
+                <a href="tel:34666333999">  +34 666 333 999</i>
+                </a>
+            </li>
+            <li>
+                <i class="fab fa-whatsapp" id="idWhatsCA"></i>
+                <a href="https://wa.me/34608618374?text=Desitjo+que+es+posin+en+contacte.+Gr%C3%A0cies."> Envia whatsapp</i>
+                </a>
+            </li>
+
+            <li><a href="politica.html" target="_blank">Política de privacitat</a></li>
+        </ol>
+    </footer>
+
+    <a href="https://wa.me/34608618374?text=Desitjo+que+es+posin+en+contacte.+Gr%C3%A0cies.">
+        <img src="pictures/Icono-Whatsapp.png" alt="" id="whatsBtn">
+    </a>
+    <script src="navBar.js"></script>
+    <script src="menu.js"></script>
+    <script src="slideshow.js"></script>
+    <script src="fotoPrincipal.js"></script>
+    <script src="colapsable.js"></script>
+    <script src="modal.js"></script>
+    <script src="portfolio.js"></script>
+
+</body>
+
+</html>
