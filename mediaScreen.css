@@ -2,7 +2,7 @@
 
 @media only screen and (max-width: 600px) {
     .main {
-        background: red;
+        background: orange;
     }
     .titol {
         font-size: 2rem;
@@ -15,10 +15,27 @@
     }
     .idioma img {
         width: 1.2rem;
-        margin: 5px 0;
+        margin: 5px 0 0 0;
     }
     article.contacte {
         padding: 20px 0;
+    }
+    section {
+        width: 100%;
+    }
+    #btnNav {
+        width: auto;
+    }
+    #detallServeis article {
+        flex-direction: column;
+    }
+    .senar {
+        width: 100%;
+        order: 1;
+    }
+    .parell {
+        width: 100%;
+        order: 2;
     }
 }
 
@@ -44,9 +61,6 @@
     .main {
         background: blue;
     }
-    .container {
-        width: 95%;
-    }
     section {
         width: 90%;
     }
@@ -59,9 +73,6 @@
     .main {
         background: orange;
     }
-    .container {
-        width: 95%;
-    }
 }
 
 
@@ -71,7 +82,7 @@
     .main {
         background: pink;
     }
-    .container {
-        width: 95%
+    #sctContacte {
+        width: 75%;
     }
 }

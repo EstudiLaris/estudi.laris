@@ -9,27 +9,23 @@
     <link rel="stylesheet" href="mediaScreen.css">
     <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="whatsBtn.css">
+    <link rel="stylesheet" href="fotoPrincipal.css">
     <title>Estudi Laris</title>
 </head>
 
 <body>
     <header>
-        <div class="topBar">
+        <div class="topBar" id="topBar">
             <div id="btnNav">
                 <label for="check" onclick="openNav()">
                     <i class="fas fa-bars" id="btn"></i>
                 </label>
             </div>
             <div id="titolPrincipal">
-                <!-- <div id="titol"> -->
-                <!-- <img src="pictures/200314_Logo_Sense fons.png" id="Logo"> -->
                 <a href="contacte.html">
-                    <h1 class="titol">ESTUDI LARIS</h1>
+                    <h1 class="titol" id="titol">ESTUDI LARIS</h1>
                     <h2 class="subTitol" id="subTitol">Energia - Hàbitat</h2>
                 </a>
-
-                <!-- <h1 class="titol" id="titolMenu">ESTUDI LARIS</h1> -->
-                <!-- </div> -->
             </div>
             <ol class="idioma">
                 <li>
@@ -52,10 +48,11 @@
                     <a href="javascript:canviPagina('index.html');">Inici</a>
                 </li>
                 <li>
-                    <a href="javascript:canviPagina('equip.html');">L'Estudi</a>
+                    <a href="javascript:canviPagina('estudi-laris.html');">L'Estudi</a>
                 </li>
                 <li>
-                    <a href="javascript:obrirSubmenu();">Serveis</a>
+                    <!--<a href="javascript:obrirSubmenu();">Serveis</a>-->
+                    <a href="javascript:canviPagina('serveis.html');">Serveis</a>
                     <ul class="subMenu" id="subMenu">
                         <li>
                             <a href="javascript:alert('encara no');">Rehabilitació energètica</a>
@@ -80,6 +77,11 @@
             </ul>
         </nav>
     </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <section id="sctContacte">
         <article>
             <h1>Arquitectura</h1>
@@ -153,6 +155,7 @@
 
     <script src="menu.js"></script>
     <script src="scroll.js"></script>
+    <script src="fotoPrincipal.js"></script>
 </body>
 
 </html>

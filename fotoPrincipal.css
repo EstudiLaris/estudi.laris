@@ -1,0 +1,63 @@
+figure {
+    position: relative;
+    /* top: 200px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+figure h1 {
+    color: white;
+}
+
+figcaption {
+    /* Bottom left text */
+    position: absolute;
+    bottom: 50px;
+}
+
+
+/* Fading animation */
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fadeIn;
+    animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    from {
+        opacity: 1
+    }
+    to {
+        opacity: .4
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1
+    }
+    to {
+        opacity: .4
+    }
+}

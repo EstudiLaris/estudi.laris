@@ -13,33 +13,40 @@
 }
 
 body {
-    background-color: green;
+    background-color: white;
 }
 
 header {
-    background-color: lightblue;
+    position: fixed;
+    top: 0;
+    background-color: transparent;
     width: 100%;
+    height: auto;
+    z-index: 1;
 }
 
 main {
     text-align: center;
 }
 
-main h1 {
-    font-size: 30px;
+main>h1 {
+    font-size: 1.875rem;
+    background-color: black;
+    color: white;
     /*display: inline;*/
 }
 
 .container {
-    background-color: yellow;
-    padding-right: 15px;
+    background-color: white;
+    width: 100%;
+    /*padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
-    margin-left: auto
+    margin-left: auto*/
 }
 
 section {
-    background-color: red;
+    background-color: white;
     margin: auto;
     width: 80%;
     display: flex;
@@ -49,25 +56,37 @@ section {
 }
 
 #sctServeis article {
-    background-color: lightblue;
+    background-color: white;
     margin: 0.625rem;
     width: auto;
-    max-width: 300px;
-    min-width: 200px;
+    height: 200px;
+    max-width: 400px;
     text-align: center;
+    border: solid 1px grey;
 }
 
 #sctServeis article h1 {
     font-size: 1.5625rem;
-    line-height: 1.75rem;
+    line-height: 2.5rem;
+    background-color: grey;
+    color: white;
+    border-bottom: solid 1px lightgrey;
 }
 
-#sctContacte {
-    width: 70%;
+#sctServeis article h2 {
+    background-color: grey;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+}
+
+#sctServeis article h2 i {
+    font-size: 1.5625rem;
+    line-height: 2rem;
+    color: white;
 }
 
 #sctContacte article {
-    background-color: lightblue;
+    background-color: white;
     margin: 0.625rem;
     width: auto;
     max-width: 550px;
@@ -88,7 +107,7 @@ label {
 
 .topBar {
     /* position: fixed;*/
-    top: 0;
+    /* top: 0; */
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
@@ -102,9 +121,9 @@ label {
     /* transition: all 1s ease-out; */
 }
 
-.animate-top {
+.animateTop {
     position: relative;
-    animation: animatetop 0.4s
+    animation: animatetop 0.4s ease-out
 }
 
 @keyframes animatetop {
@@ -116,6 +135,12 @@ label {
         top: 0;
         opacity: 1
     }
+}
+
+#btnNav {
+    width: 100px;
+    background-color: white;
+    text-align: center;
 }
 
 #btn {
@@ -153,12 +178,21 @@ p {
     font-size: 1rem;
 }
 
+#queEs {
+    width: 450px;
+    margin: auto;
+    padding: 15px 0 5px 0;
+    text-align: center;
+    background-color: white;
+}
+
 footer {
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    border-top: solid 3px grey;
 }
 
 footer div {
@@ -205,4 +239,92 @@ a:hover {
 
 footer a:nth-child(1):hover {
     border-bottom: 3px solid !important;
+}
+
+
+/* Serveis */
+
+#detallServeis .senar {
+    width: 40%;
+    height: 150px;
+    background-color: grey;
+    color: white;
+    overflow: hidden;
+}
+
+#detallEstudi .senar {
+    width: 40%;
+    height: 300px;
+    background-color: grey;
+    color: white;
+    overflow: hidden;
+}
+
+#detallEstudi .senar img {
+    height: 200px;
+}
+
+#detallServeis .parell {
+    width: 60%;
+    height: 150px;
+    background-color: white;
+    border: solid 1px grey;
+}
+
+#detallEstudi .parell {
+    width: 60%;
+    height: 300px;
+    background-color: white;
+    border: solid 1px grey;
+}
+
+#detallServeis article {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#detallEstudi article {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#detallServeis article div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+
+#detallEstudi article div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+
+#detallServeis article div h1 {
+    font-size: 28px;
+    line-height: 35px;
+    color: white;
+}
+
+#detallEstudi article div h1 {
+    font-size: 28px;
+    line-height: 35px;
+    color: white;
+}
+
+#detallServeis article div h2 i {
+    color: white;
+    font-size: 40px;
 }
